@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public devices=true;
   constructor() { }
 
   ngOnInit(): void {
+    if(window.innerWidth<=576){
+      this.devices=false;
+    }
   }
 
 }

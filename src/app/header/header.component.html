@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Inventory </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,38 +8,56 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">
-             <img class="icon-size mx-2" src="../../assets/icons/add.png" alt="">
-            <span class="sr-only">(current)</span></a>
+          <img class="icon-size mx-2" src="../../assets/icons/add.png" alt="">
+          <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">
-            <img class="icon-size mx-2" src="../../assets/icons/history.png" alt="">
+          <img class="icon-size mx-2" src="../../assets/icons/history.png" alt="">
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">
-            <!-- <img class="icon-size mx-2" src="../../assets/icons/search.png" alt=""> -->
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         </a>
       </li>
     </ul>
     <form class="form-inline my-0 my-lg-0">
-      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-
-      <img class="icon-size mx-2 my-sm-0" src="../../assets/icons/notification.png" alt="">
-
-
-      <img class="icon-size  mx-2 my-sm-0" src="../../assets/icons/browser.png" alt="">
-
-
-      <img class="icon-size  mx-2 my-sm-0" src="../../assets/icons/setting.png" alt="">
-
-
-      <img class="icon-size  mx-2 my-sm-0" src="../../assets/icons/help and support.png" alt="">
-
-      <img class="icon-size  mx-2 my-sm-0" src="../../assets/icons/user.png" alt="">
-
+      <a href="#">
+        <img class="icon-size mx-2 my-sm-0" src="../../assets/icons/notification.png" alt="">
+      </a>
+      <a href="#">
+        <img class="icon-size  mx-2 my-sm-0" src="../../assets/icons/browser.png" alt="">
+      </a>
+      <a href="">
+        <img class="icon-size  mx-2 my-sm-0" src="../../assets/icons/setting.png" alt="">
+      </a>
+      <a href="">
+        <img class="icon-size  mx-2 my-sm-0" src="../../assets/icons/help and support.png" alt="">
+      </a>
+      <a href="">
+        <img class="icon-size  mx-2 my-sm-0" src="../../assets/icons/user.png" alt="">
+      </a>
     </form>
   </div>
-</nav>
+</nav> -->
+
+<div class="card">
+  <div class="card-header">
+    <a class="card-link float-left " href=""><i class=" faaa fas fa-dolly-flatbed"></i> <span  *ngIf="this.devices==true" class="faa">InvenTory</span></a>
+    <a class="card-link float-left" href=""><i class="faaa fas fa-plus-circle"></i></a>
+    <a class="card-link float-left" href=""><i class="faaa fas fa-history"></i> </a>
+    <!-- <a class="card-link float-left" href=""><i class="fas fa-search"></i> </a> -->
+
+    <div *ngIf="this.devices" class="form-inline   p-0 m-0 ml-2 float-left">
+      <div class="input-group p-0 m-0">
+        <span class="input-group-text px-2 m-0" id="basic-addon1"><i class="fas fa-search"></i></span>
+        <input type="text" class="form-control p-0 m-0" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+    </div>
+    <a class="card-link float-right" href=""><i class="faaa fas fa-user"></i> </a>
+    <a class="card-link float-right" href=""><i class="faaa far fa-question-circle"></i> </a>
+    <a class="card-link float-right" href=""><i class="faaa fas fa-cog"></i> </a>
+    <a class="card-link float-right" href=""><i class="faaa fas fa-folder-open"></i> </a>
+  </div>
+</div>

@@ -2,3 +2,12 @@
     height: 25px;
     width: 25px;
 }
+.icon-size:hover{
+    background-color: salmon;
+}
+.faaa{
+    font-size: 30px;
+}
+.faa{
+    font-size: 25px;
+}

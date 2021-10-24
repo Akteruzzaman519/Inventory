@@ -1,0 +1,101 @@
+<div class="card">
+  <div class="card-header">
+    <h3> New Customer</h3>
+  </div>
+  <div class="card-body">
+
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <button class="btn btn-success mx-1" (click)="otherDetails()">Other Details</button>
+    <button class="btn btn-success mx-1" (click)="address()">Address</button>
+    <button class="btn btn-success mx-1" (click)="customers()">Customer Field</button>
+    <button class="btn btn-success mx-1" (click)="contracts()">Contract Persons</button>
+    <button class="btn btn-success mx-1" (click)="reports()">Reporting Tags</button>
+    <button class="btn btn-success mx-1" (click)="remarks()">Remarks</button>
+  </div>
+  <div class="card-body" style="min-height: 40vh;">
+    <div *ngIf="this.otherDetail===true" class="">
+      <form>
+        <div class="from-group my-3">
+          <label for="currencyl">Currency* </label>
+          <select id="currencyl" class="form-control">
+            <option value="">Tk</option>
+            <option value="">$</option>
+            <option value="">Paisa</option>
+            <option value="">Mudra</option>
+            <option value="">Rial</option>
+          </select>
+        </div>
+
+        <div class="from-group my-3">
+          <label for="currencyl">Payment Terms* </label>
+          <select id="currencyl" class="form-control">
+            <option value="">Net 30</option>
+            <option value="">Net 45</option>
+            <option value="">Net 80</option>
+            <option value="">Net El</option>
+            <option value="">6Neteral</option>
+          </select>
+        </div>
+
+        <div class="from-group my-3">
+          <label for="currencyl">Price List </label>
+          <select id="currencyl" class="form-control">
+            <option value="">122</option>
+            <option value="">200</option>
+            <option value="">350</option>
+            <option value="">465</option>
+            <option value="">61254</option>
+          </select>
+        </div>
+
+        <div class="from-group my-3">
+          <label for="facebook">Facebook</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span for="facebook" class="input-group-text" id="basic-addon1"><i
+                  class="fab fa-facebook-square"></i></span>
+            </div>
+            <input type="text" id="facebook" class="form-control" placeholder="Username" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+        </div>
+
+        <div class="from-group my-2">
+          <label for="facebook">Twitter</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span for="facebook" class="input-group-text" id="basic-addon1"><i
+                  class="fab fa-twitter-square"></i></span>
+            </div>
+            <input type="text" id="facebook" class="form-control" placeholder="Username" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <div *ngIf="this.addres===true" class="">
+      Address
+    </div>
+    <div *ngIf="this.contract===true" class="">
+      Contract Persons
+    </div>
+    <div *ngIf="this.customer===true" class="">
+      Customer Fields
+    </div>
+    <div *ngIf="this.report===true" class="">
+      Reporting Tags
+    </div>
+    <div *ngIf="this.remark===true" class="">
+      Remarks
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-secondary mx-1" >Save</button>
+    <button class="btn btn-danger mx-1" >Cancel</button>
+  </div>
+</div>

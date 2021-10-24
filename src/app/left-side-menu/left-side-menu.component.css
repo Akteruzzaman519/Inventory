@@ -1,0 +1,15 @@
+li:hover{
+    background-color: green;
+    color: white;
+}
+li:hover a{
+    color: white;
+}
+.hideshow{
+    color: red;
+    display: none;
+}
+li:hover a.hideshow{
+display: block;
+color: white;
+}
